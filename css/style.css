@@ -11,7 +11,7 @@
 }
 
 #background-container{
-    background-image: url('https://i.ibb.co/TtxsyFR/background.jpg');
+    background-image: url('https://github.com/JO-DEV-IL/Recipe-Lookup-App/blob/main/background.jpg?raw=true');
 }
 
 *{
@@ -50,6 +50,18 @@ html{
     font-size: 3rem;
     color: black;
     margin-bottom: 30px;
+}
+.glass{
+    opacity: 0.8;
+    background-color: #f6feff;
+    height: 150px;
+    width: 500px;
+    margin: auto;
+}
+.citation{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
 }
 #form{
     width: 500px;
@@ -126,8 +138,4 @@ button{
     font-size: 1.4rem;
     letter-spacing: .05rem;
     line-height: 2rem;
-}
-#after-search-white:not(.search-result .item){
-    background-color: white;
-    overflow: hidden;
 }

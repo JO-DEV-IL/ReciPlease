@@ -8,9 +8,8 @@ function getFetch(e){
     fetch(url)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
-            generateHTML(data.hits)
-            console.log(data)
-            // Code for displaying data here
+            generateHTML(data.hits) //adds that data to the function
+            console.log(data) //prints data
 
         })
         .catch(err => {
@@ -31,6 +30,7 @@ function getFetch(e){
 				<a href="${result.recipe.url}" class="view-button">View Recipe</a>
 			</div>
 			<p class="item-data">Calories: ${result.recipe.calories.toFixed(0)}</p>
+            <p class="item-data">Yields: ${result.recipe.yield}</p>
 		</div>
         
         `
